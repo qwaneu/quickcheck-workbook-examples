@@ -18,7 +18,6 @@ stack runghc src/Main.hs
 and watch it fail:
 
 ```
-stack runghc src/Main.hs
 *** Failed! Falsifiable (after 3 tests and 2 shrinks):    
 "ab"
 ```
@@ -26,7 +25,7 @@ stack runghc src/Main.hs
 Play around with the property interactively:
 
 ```
-$ stack ghci
+stack ghci
 *Main> quickCheck prop_failObviously 
 *** Failed! Falsifiable (after 3 tests and 2 shrinks):    
 "ab"
